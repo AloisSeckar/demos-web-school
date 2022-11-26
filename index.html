@@ -9,19 +9,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                atos: '#006ead',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        atos: '#0596ff',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
 
-<body class="px-1">
+<body class="px-2">
     <div class="flex flex-col h-screen items-stretch">
         <div class="flex-none mb-2">
             <div class="flex items-center">
@@ -31,24 +31,28 @@
                     </h1>
                 </div>
                 <div class="flex-none">
-                    <a href="https://github.com/AloisSeckar" alt="Alois Sečkár" title="Created by Alois Sečkár"><img src="as.webp" class="h-12 mt-1 rounded-full inline-block" /></a>
-                    <a href="https://atos.net/cs/ceska-republika" alt="Atos" title="Powered by Atos"><img src="atos.webp" class="h-12 mt-1 ml-2 inline-block" /></a>
+                    <a href="https://github.com/AloisSeckar" alt="Alois Sečkár" title="Created by Alois Sečkár">
+                        <img src="as.webp" class="h-12 mt-1 rounded-full inline-block" /></a>
+                    <a href="https://atos.net/cs/ceska-republika" alt="Atos" title="Powered by Atos">
+                        <img src="atos.webp" class="h-8 mt-1 ml-2 inline-block" /></a>
                 </div>
             </div>
         </div>
         <div class="flex-none mb-2">
             Zde si můžete zobrazit výsledky svých prací.
             Pokud chcete své dílo aktualizovat, přidat nové nebo tu něco nefunguje,
-            napište mi na <a href="mailto:alois.seckar@gmail.com" class="text-atos hover:text-amber-500">alois.seckar@gmail.com</a>.
+            napište mi na <a href="mailto:alois.seckar@gmail.com"
+                class="text-atos hover:text-amber-500">alois.seckar@gmail.com</a>.
         </div>
         <div class="flex-none mb-2">
             <strong>Vyberte projekt ke zobazení:</strong>
-            <select id="source" class="w-32 border border-black" onchange="changeSource()">
-                <option value="_demo-as.html">Demo 1</option>
-                <option value="_demo-atos.html">Demo 2</option>
+            <select id="source" class="w-64 border border-black" onchange="changeSource()">
+                <option value="_demo-html.html">Demo - HTML</option>
+                <option value="_demo-as.html">Demo - Alois Sečkár</option>
+                <option value="_demo-atos.html">Demo - Atos</option>
             </select>
         </div>
-        <iframe id="content" src="projects/_demo-as.html" class="flex-1 w-full my-1 border border-black">
+        <iframe id="content" src="projects/_demo-html.html" class="flex-1 w-full my-1 border border-black">
         </iframe>
     </div>
 
