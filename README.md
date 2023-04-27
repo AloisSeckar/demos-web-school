@@ -1,4 +1,5 @@
-# demos-web-milicov
-The showcase for student's projects from ZŠ K Milíčovu
+# demos-web-school
+The showcase for student's projects from Elementary schools
 
-Deployed at [https://web-milicov.netlify.app/](https://web-milicov.netlify.app/)
+Currenlty contains works from ZŠ Kamenice nad Lipou
+Deployed at [https://web-kamenice-nad-lipou.netlify.app/](https://web-kamenice-nad-lipou.netlify.app/)
