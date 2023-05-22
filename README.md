@@ -1,5 +1,7 @@
 # demos-web-school
 The showcase for student's projects from Elementary schools
 
-Currenlty contains works from ZŠ Kamenice nad Lipou
-Deployed at [https://web-kamenice-nad-lipou.netlify.app/](https://web-kamenice-nad-lipou.netlify.app/)
+Currently deployed at [https://web-4-school.netlify.app/](https://web-4-school.netlify.app/)
+
+Currently contains works from:
+- 2023-06-01 - ZŠ Kamenice nad Lipou
