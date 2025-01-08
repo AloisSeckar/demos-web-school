@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Základy tvorby webových stránek pro ZŠ</title>
+    <title>ZŠ Lichnov - základy HTML</title>
 
     <!-- NOTE: This isn't meant for production, but for this educational project, it'll do just fine -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,7 +13,7 @@
                 extend: {
                     colors: {
                         atos: '#0596ff',
-                        eviden: '#ff6d43'
+                        eviden: '#ff6d43',
                     }
                 }
             }
@@ -28,31 +28,41 @@
             <div class="flex items-center">
                 <div class="flex-1">
                     <h1 class="text-3xl font-bold text-eviden">
-                        Základy tvorby webových stránek pro ZŠ
+                        Základy tvorby webových stránek - ZŠ Lichnov - 9. ledna 2025
                     </h1>
                 </div>
                 <div class="flex-none">
                     <a href="https://github.com/AloisSeckar" title="Created by Alois Sečkár">
-                        <img src="as.webp" alt="Alois Sečkár" class="h-12 mt-1 rounded-full inline-block"></a>
+                        <img src="/as.webp" alt="Alois Sečkár" class="h-12 mt-1 rounded-full inline-block"></a>
                     <a href="https://eviden.com/" title="Powered by Eviden">
-                        <img src="eviden.webp" alt="Eviden" class="h-8 mt-1 ml-2 inline-block"></a>
+                        <img src="/eviden.webp" alt="Atos" class="h-8 mt-1 ml-2 inline-block"></a>
                 </div>
             </div>
         </div>
         <div class="flex-none mb-2">
-            Zde se nachází rozcestník na výsledky žákovských prací.
+            Zde si můžete zobrazit výsledky svých prací.
             Pokud chcete své dílo aktualizovat, přidat nové nebo tu něco nefunguje,
             napište mi na <a href="mailto:alois.seckar@gmail.com"
                 class="text-eviden hover:text-atos">alois.seckar@gmail.com</a>.
         </div>
         <div class="flex-none mb-2">
             <strong>Vyberte projekt ke zobazení:</strong>
-            <ul class="ml-8 list-disc">
-				<li><a href="projects/2025-lichnov/index.html" class="text-eviden hover:text-atos">09.01.2025 - ZŠ Lichnov </option></li>
-				<li><a href="projects/2023-kamenice-nad-lipou/index.html" class="text-eviden hover:text-atos">01.06.2023 - ZŠ Kamenice nad Lipou</option></li>
-            </ul>
+            <select id="source" class="w-64 border border-black" onchange="changeSource()">
+                <option value="_list.html">Seznam projektů</option>
+                <!--<option value="prijmeni-jmeno.html">Příjmení Jméno</option>-->
+            </select>
         </div>
+        <iframe id="content" src="_list.html" class="flex-1 w-full my-1 border border-black">
+        </iframe>
     </div>
+
+    <script>
+        function changeSource() {
+            const frame = document.getElementById('content')
+            frame.src = document.getElementById('source').value;
+        }
+    </script>
+
 </body>
 
 </html>

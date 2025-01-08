@@ -5,3 +5,4 @@ Currently deployed at [https://web-4-school.netlify.app/](https://web-4-school.n
 
 Currently contains works from:
 - 2023-06-01 - ZŠ Kamenice nad Lipou
+- 2025-01-09 - ZŠ Lichnov
